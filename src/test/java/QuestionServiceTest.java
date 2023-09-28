@@ -33,7 +33,6 @@ class QuestionServiceTest {
 
         quiz = new Quiz();
 
-        // Initialize Question
         question = new Question();
         question.setTopic("Sample Topic");
         question.setDifficultyRank(1);
@@ -48,7 +47,6 @@ class QuestionServiceTest {
 
         quiz.setQuestions(Arrays.asList(question, question2));
 
-        // Initialize Responses
         response1 = new Response();
         response1.setText("Response 1");
         response1.setCorrect(true);
