@@ -45,7 +45,7 @@ public class QuestionService {
             transaction = session.beginTransaction();
             session.delete(question);
             transaction.commit();
-            session.evict(question); // Evict the entity from the session
+            session.evict(question);
             question.setQuestionId(null);
         } catch (Exception e) {
             if (transaction != null) {
